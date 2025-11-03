@@ -36,3 +36,9 @@ use App\Http\Controllers\GreetingController;
 
 Route::get('/greeting', [GreetingController::class, 'showGreeting']);
 
+//usercontroller route
+use App\Http\Controllers\UsersController;
+
+Route::get('/users', [UsersController::class, 'index'])->name('users.index');
+Route::post('/users', [UsersController::class, 'store'])->name('users.store');
+
