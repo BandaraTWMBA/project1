@@ -24,12 +24,12 @@ Route::get('/hello', function () {
 Route::get('/about', function () {
     return '<h1>About Us</h1><p>This is a sample Laravel application.</p>';
 });
-Route::get('/greeting', function () {
-    return view('greeting');
-});
-Route::get('/welcome/{name}', function ($name) {
-    return view('greeting', ['name' => $name]);
-});
+// Route::get('/greeting', function () {
+//     return view('greeting');
+// });
+// Route::get('/welcome/{name}', function ($name) {
+//     return view('greeting', ['name' => $name]);
+// });
 
 //controller route
 use App\Http\Controllers\GreetingController;
